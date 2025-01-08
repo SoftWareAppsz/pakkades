@@ -1,17 +1,1 @@
-#!/bin/bash
-
-# Hardcoded password (sebaiknya dihindari dalam produksi, gunakan hash/password file yang lebih aman)
-PASSWORD="d7c5f9fd72dd6435011a876ddf632b94fdd6384d583adeb4e9a2c7e6d02b7265"
-
-# Prompt user for password
-read -sp "sukses888: " input_password
-echo ""
-
-# Check password
-if [[ "$input_password" == "$pass" ]]; then
-    echo "Access granted!"
-    # Tambahkan perintah yang akan dijalankan setelah autentikasi berhasil di sini
-else
-    echo "Access denied!"
-    exit 1
-fi
+AUTH_PASS="sukses888"
