@@ -1,6 +1,3 @@
 AUTH_PASS="5888fe5d0ac0916b796b168d4f11a789"
-# script.sh
-source config.env
 echo "Menggunakan password: $AUTH_PASS"
-curl -u "user:$AUTH_PASS"
 chmod 600 config.env
